@@ -1,0 +1,19 @@
+{
+    "python.linting.flake8Enabled": false,
+    "python.linting.prospectorEnabled": false,
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "terminal.integrated.defaultProfile.windows": "Anaconda PS",
+    "terminal.integrated.profiles.windows": {
+        "Anaconda PS": {
+            "source": "PowerShell",
+            "args": [
+                "-NoExit",
+                "-Command",
+                "& '${env:userprofile}\\anaconda3\\shell\\condabin\\conda-hook.ps1' ; conda activate '${env:userprofile}\\anaconda3'"
+            ],
+            "color": "terminal.ansiGreen",
+            "icon": "terminal-powershell"
+        }
+    }
+}
