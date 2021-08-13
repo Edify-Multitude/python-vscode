@@ -6,7 +6,9 @@
     "terminal.integrated.defaultProfile.windows": "Anaconda PS",
     "terminal.integrated.profiles.windows": {
         "Anaconda PS": {
-            "source": "PowerShell",
+            "path": [
+                "${env:localappdata}\\Microsoft\\powershell-daily\\pwsh.exe"
+            ],
             "args": [
                 "-NoExit",
                 "-Command",
